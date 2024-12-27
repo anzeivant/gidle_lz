@@ -1,0 +1,1786 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #130618; /* 深色背景 */
+    color: #ffffff; /* 白色字体 */
+    display: flex; /* 使用flex布局 */
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    min-height: 100vh; /* 视口高度的最小值 */
+}
+/* 标题 */
+
+header {
+    background-color: #130618; /* 黑色背景 */
+    color: #ffffff; /* 白色字体 */
+    padding: 0;
+    text-align: center;
+    opacity: 0.8;
+    width: 50%; /* 使header宽度占满整个视口宽度 */
+    font-size: 1vw;
+}
+
+/* 动画 */
+
+@keyframes lightanimation1 {
+    from{
+    }
+    to{
+        transform: translateX(-120%) translateY(15%) rotate(-15deg) scale(1.5);
+    }
+}
+@keyframes lightanimation2 {
+    from{
+    }
+    to{
+        transform: translateX(120%) translateY(15%) rotate(15deg) scale(1.5);
+    }
+}
+@keyframes lightanimation3 {
+    from{
+        transform: translateX(-120%) translateY(15%) rotate(-15deg) scale(1.5);
+    }
+    to{
+        transform: translateX(0) translateY(0) rotate(0) scale(1);
+    }
+}
+@keyframes lightanimation4 {
+    from{
+        transform: translateX(120%) translateY(15%) rotate(15deg) scale(1.5);
+    }
+    to{
+        transform: translateX(0) translateY(0) rotate(0) scale(1);
+    }
+}
+
+/* 年份 */
+@keyframes date0 {
+    0%, 100% {
+        opacity: 0;
+    }
+    
+}
+
+@keyframes date1 {
+    0%{
+        transform:  translate(-50%, -43%) rotate(360deg) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+}
+/*旋转*/
+@keyframes date2 {
+    0%{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+    
+    25% {
+        transform: translate(-50%, -43%) rotate(-15deg) scale(1);
+        opacity: 1;
+        /* animation-timing-function: ease-out; */
+    }
+
+    50%{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+    75% {
+        transform: translate(-50%, -43%) rotate(15deg) scale(1);
+        opacity: 0.6;
+        /* animation-timing-function: ease-in; */
+    }
+
+    100% {
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+}
+/*放大*/
+
+@keyframes datebig1 {
+    0%{
+         
+    }
+    
+    100% {
+        transform: translate(15%,-33.5%) rotate(-15deg) scale(1.5);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes datebig2 {
+    0%{
+         
+    }
+    
+    100% {
+        transform: translate(15%,-33.5%) rotate(15deg) scale(1.5);
+        opacity: 1;
+        
+    }
+}
+
+@keyframes datebig3 {
+    0%{
+         
+    }
+    
+    100% {
+        transform: translate(15%,-33.5%) rotate(45deg) scale(1.5);
+        opacity: 1;
+        
+    }
+}
+@keyframes datebig4 {
+    0%{
+
+    }
+    
+    100% {
+        transform: translate(-115.5%,-33.5%) rotate(-45deg) scale(1.5);
+        opacity: 1;
+        
+    }
+}
+@keyframes datebig5 {
+    0%{
+
+    }
+    
+    100% {
+        transform: translate(-115.5%,-33.5%) rotate(-15deg) scale(1.5);
+        opacity: 1;
+        
+    }
+}
+@keyframes datebig6 {
+    0%{
+
+    }
+    
+    100% {
+        transform: translate(-115.5%,-33.5%) rotate(15deg) scale(1.5);
+        opacity: 1;
+        
+    }
+}
+/*缩小*/
+@keyframes datesmall1 {
+    from{
+        transform: translate(15%,-33.5%) rotate(-15deg) scale(1.5);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes datesmall2 {
+    from{
+        transform: translate(15%,-33.5%) rotate(15deg) scale(1.5);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes datesmall3 {
+    from{
+        transform: translate(15%,-33.5%) rotate(45deg) scale(1.5);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes datesmall4 {
+    from{
+        transform: translate(-115.5%,-33.5%) rotate(-45deg) scale(1.5);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes datesmall5 {
+    from{
+        transform: translate(-115.5%,-33.5%) rotate(-15deg) scale(1.5);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes datesmall6 {
+    from{
+        transform: translate(-115.5%,-33.5%) rotate(15deg) scale(1.5);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* 灯光 */
+@keyframes light0 {
+    0%, 100% {
+        opacity: 0;
+    }
+    
+}
+
+@keyframes light1animation0 {
+    0%{
+        transform:  translate(-50%, -43%) scale(0.5); /* 居中对齐 */
+        opacity: 0;
+    }
+    60% {
+        transform: translate(-50%, -43%) scale(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -43%) scale(1);
+        opacity: 1;  
+    }
+}
+@keyframes light2animation0 {
+    0%{
+        transform:  translate(-50%, -43%) scale(0.5); /* 居中对齐 */
+        opacity: 0;
+    }
+    60% {
+        transform: translate(-50%, -43%) scale(0.8);
+        opacity: 0.8;
+        
+    }
+    100% {
+        transform: translate(-50%, -43%) rotate(30deg) scale(1);
+        opacity: 0.8;
+    }
+}
+@keyframes light3animation0 {
+    0%{
+        transform:  translate(-50%, -43%) scale(0.5); /* 居中对齐 */
+        opacity: 0;
+    }
+    60% {
+        transform: translate(-50%, -43%) scale(0.8);
+        opacity: 0.8;
+        
+    }
+    100% {
+        transform: translate(-50%, -43%) rotate(-30deg) scale(1);
+        opacity: 0.3;
+    }
+}
+/*旋转*/
+@keyframes light1animation1 {
+    0%{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+    
+    25% {
+        transform: translate(-50%, -43%) rotate(-15deg) scale(1);
+        opacity: 0.2;
+        /* animation-timing-function: ease-out; */
+    }
+
+    50%{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 0.8;
+        
+    }
+    75% {
+        transform: translate(-50%, -43%) rotate(15deg) scale(1);
+        opacity: 0.1;
+        /* animation-timing-function: ease-in; */
+    }
+
+    100% {
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+}
+@keyframes light2animation1 {
+    0%{
+        transform: translate(-50%, -43%) rotate(30deg) scale(1);
+        opacity: 0.8;
+        
+    }
+    
+    25% {
+        transform: translate(-50%, -43%) rotate(15deg) scale(1);
+        opacity: 1;
+        /* animation-timing-function: ease-out; */
+    }
+
+    50%{
+        transform: translate(-50%, -43%) rotate(30deg) scale(1);
+        opacity: 0.1;
+        
+    }
+    75% {
+        transform: translate(-50%, -43%) rotate(45deg) scale(1);
+        opacity: 0.2;
+        /* animation-timing-function: ease-in; */
+    }
+
+    100% {
+        transform: translate(-50%, -43%) rotate(30deg) scale(1);
+        opacity: 0.8;
+        
+    }
+}
+@keyframes light3animation1 {
+    0%{
+        transform: translate(-50%, -43%) rotate(-30deg) scale(1);
+        opacity: 0.3;
+        
+    }
+    
+    25% {
+        transform: translate(-50%, -43%) rotate(-45deg) scale(1);
+        opacity: 1;
+        /* animation-timing-function: ease-out; */
+    }
+
+    50%{
+        transform: translate(-50%, -43%) rotate(-30deg) scale(1);
+        opacity: 0.1;
+        
+    }
+    75% {
+        transform: translate(-50%, -43%) rotate(-15deg) scale(1);
+        opacity: 1;
+        /* animation-timing-function: ease-in; */
+    }
+
+    100% {
+        transform: translate(-50%, -43%) rotate(-30deg) scale(1);
+        opacity: 0.3;
+        
+    }
+}
+@keyframes ligfade {
+    0%{
+        
+    }
+    60% {
+        transform: translate(-50%, -43%) ;
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(-50%, -43%) scale(0.8);
+        opacity: 0;
+    }
+}
+/*旋转*/
+@keyframes date2 {
+    0%{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+    
+    25% {
+        transform: translate(-50%, -43%) rotate(-15deg) scale(1);
+        opacity: 1;
+        /* animation-timing-function: ease-out; */
+    }
+
+    50%{
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+    75% {
+        transform: translate(-50%, -43%) rotate(15deg) scale(1);
+        opacity: 0.6;
+        /* animation-timing-function: ease-in; */
+    }
+
+    100% {
+        transform: translate(-50%, -43%) rotate(0) scale(1);
+        opacity: 1;
+        
+    }
+}
+
+/* 专辑 */
+@keyframes animation0 {
+    0%, 100% {
+        opacity: 0;
+    }
+    
+}
+
+/* 专辑1 */
+@keyframes album1animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-480%,-150%) scale(1);
+        opacity: 1;
+        
+    }
+}
+@keyframes album1animation1 {
+    0%{
+        transform: translate(-480%,-150%) scale(1);
+        opacity: 1;
+        
+    }
+    
+    30% {
+        transform: translate(-260%,-100%) scale(0.4);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(-300%,-160%) scale(0.5);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translate(-380%,-180%) scale(0.6);
+        opacity: 0.6;
+    }
+    
+    
+    100% {
+        transform: translate(-480%,-150%) scale(1);
+        opacity: 1;
+        
+    }
+}
+@keyframes album1remake {
+    0%{
+        
+        
+    }
+    
+    100% {
+        transform: translate(-480%,-150%) scale(1);
+        opacity: 1;
+        
+    }
+}
+
+/* 专辑2 */
+@keyframes album2animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-280%,-50%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album2animation1 {
+    0%{
+        transform: translate(-280%,-50%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+    
+    50% {
+        transform: translate(-480%,-50%) scale(1);
+        opacity: 1;
+        animation-timing-function: ease-in-out;
+    }
+    
+    
+    100% {
+        transform: translate(-280%,-50%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album2remake {
+    0%{   
+    }
+    
+    100% {
+        transform: translate(-280%,-50%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+}
+/* 专辑3 */
+@keyframes album3animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-400%,20%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album3animation1 {
+    0%{
+        transform: translate(-400%,20%) scale(0.5);
+        opacity: 0.6;
+    }
+    30% {
+        transform: translate(-280%,10%) scale(0.3);
+        opacity: 0.3;
+    }
+    
+    80% {
+        transform: translate(-480%,40%) scale(0.9);
+        opacity: 1;
+    }
+    
+    
+    100% {
+        transform: translate(-400%,20%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album3remake {
+    0%{
+        
+        
+    }
+    
+    100% {
+        transform: translate(-400%,20%) scale(0.5);
+        opacity: 0.6;
+        
+    }
+}
+/* 专辑4 */
+@keyframes album4animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-350%,80%) scale(0.7);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album4animation1 {
+    0%{
+        transform: translate(-350%,80%) scale(0.7);
+        opacity: 0.6;
+        
+    }
+    20% {
+        transform: translate(-460%,60%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-350%,90%) scale(0.6);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translate(-260%,80%) scale(0.4);
+        opacity: 0.4;
+    }
+    
+    100% {
+        transform: translate(-350%,80%) scale(0.7);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album4remake {
+    0%{
+        
+        
+    }
+    
+    100% {
+        transform: translate(-350%,80%) scale(0.7);
+        opacity: 0.6;
+        
+    }
+}
+/* 专辑5 */
+@keyframes album5animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(380%,80%) scale(0.8);
+        opacity: 1;
+        
+    }
+}
+@keyframes album5animation1 {
+    0%{
+        transform: translate(380%,80%) scale(0.8);
+        opacity: 1;
+        
+    }
+    
+    50% {
+        transform: translate(140%,80%) scale(0.3);
+        opacity: 0.3;
+        animation-timing-function: ease-in-out;
+    }
+    
+    
+    100% {
+        transform: translate(380%,80%) scale(0.8);
+        opacity: 1;
+        
+    }
+}
+@keyframes album5remake {
+    0%{
+        
+    }
+    
+    100% {
+        transform: translate(380%,80%) scale(0.8);
+        opacity: 1;
+        
+    }
+}
+/* 专辑6 */
+@keyframes album6animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(260%,40%) scale(0.6);
+        opacity: 0.6;
+    }
+}
+@keyframes album6animation1 {
+    0%{
+        transform: translate(260%,40%) scale(0.6);
+        opacity: 0.6;
+        
+    }
+    25% {
+        transform: translate(140%,20%) scale(0.2);
+        opacity: 0.2;
+    }
+    75% {
+        transform: translate(180%,40%) scale(0.3);
+        opacity: 0.3;
+        
+    }
+    100% {
+        transform: translate(260%,40%) scale(0.6);
+        opacity: 0.6;
+        
+    }
+}
+@keyframes album6remake {
+    0%{
+        
+    }
+    
+    100% {
+        transform: translate(260%,40%) scale(0.6);
+        opacity: 0.6;
+        
+    }
+}
+/* 专辑7 */
+@keyframes album7animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(360%,-10%) scale(0.7);
+        opacity: 0.7; 
+    }
+}
+@keyframes album7animation1 {
+    0%{
+        transform: translate(360%,-10%) scale(0.7);
+        opacity: 0.7;  
+    }
+    30% {
+        transform: translate(250%,-20%) scale(0.5);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translate(180%,-10%) scale(0.3);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(360%,-10%) scale(0.7);
+        opacity: 0.7; 
+        
+    }
+}
+@keyframes album7remake {
+    0%{
+        
+    }
+    
+    100% {
+        transform: translate(360%,-10%) scale(0.7);
+        opacity: 0.7; 
+        
+    }
+}
+/* 专辑8 */
+@keyframes album8animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(160%,-40%) scale(0.4);
+        opacity: 0.4; 
+    }
+}
+@keyframes album8animation1 {
+    0%{
+        transform: translate(160%,-40%) scale(0.4);
+        opacity: 0.4;  
+    }
+    30% {
+        transform: translate(260%,-80%) scale(0.6);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(400%,-80%) scale(0.8);
+        opacity: 0.8;
+    }
+    80% {
+        transform: translate(260%,-100%) scale(0.6);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(160%,-40%) scale(0.4);
+        opacity: 0.4; 
+        
+    }
+}
+@keyframes album8remake {
+    0%{
+        
+    }
+    
+    100% {
+        transform: translate(160%,-40%) scale(0.4);
+        opacity: 0.4; 
+        
+    }
+}
+/* 专辑9 */
+@keyframes album9animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(400%,-160%) scale(0.9);
+        opacity: 0.9; 
+    }
+}
+@keyframes album9animation1 {
+    0%{
+        transform: translate(400%,-160%) scale(0.9);
+        opacity: 0.9;  
+    }
+    
+    50% {
+        transform: translate(200%,-120%) scale(0.4);
+        opacity: 0.4;
+    }
+    
+    100% {
+        transform: translate(400%,-160%) scale(0.9);
+        opacity: 0.9;  
+        
+    }
+}
+@keyframes album9remake {
+    0%{
+        
+    }
+    
+    100% {
+        transform: translate(400%,-160%) scale(0.9);
+        opacity: 0.9;  
+        
+    }
+}
+/* 专辑10 */
+@keyframes album10animation0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(140%,-120%) scale(0.4);
+        opacity: 0.4; 
+    }
+}
+@keyframes album10animation1 {
+    0%{
+        transform: translate(140%,-120%) scale(0.4);
+        opacity: 0.4;   
+    }
+    40% {
+        transform: translate(200%,-180%) scale(0.6);
+        opacity: 0.7;
+    }
+    80% {
+        transform: translate(300%,-200%) scale(0.5);
+        opacity: 0.5;
+    }
+    
+    100% {
+        transform: translate(140%,-120%) scale(0.4);
+        opacity: 0.4;  
+        
+    }
+}
+@keyframes album10remake {
+    0%{
+        
+    }
+    
+    100% {
+        transform: translate(140%,-120%) scale(0.4);
+        opacity: 0.4;  
+        
+    }
+}
+/* 单一专辑 */
+@keyframes outstand1 {
+    0%{
+        
+    }
+    
+    100% {
+        transform:translate(0,-70%) scale(1.2);
+        opacity: 1;
+    }
+    
+}
+@keyframes outstand2 {
+    0%{
+        
+    }
+    
+    100% {
+        transform:translate(-100%,-70%) scale(1.2);
+        opacity: 1;
+    }
+    
+}
+@keyframes fade {
+    0% {
+        
+    }
+    
+    100% {
+        transform:translate(-50%,-50%) (0.5);
+        opacity: 0;
+    }
+    
+}
+
+/* 表格1 */
+@keyframes da1tar0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(80%,-100%) scale(2.6);
+        opacity: 0.3;
+    }
+}
+
+@keyframes da1tar1 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(80%,-100%) scale(2.6) ;
+        opacity: 1;
+    }
+}
+@keyframes da1tar2 {
+    0%{
+        transform: translate(80%,-100%) scale(2.6);
+        opacity: 0.3;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+@keyframes da1tar3 {
+    0%{
+        transform: translate(80%,-100%) scale(2.6) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+
+@keyframes da1tal0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-160%,-100%) scale(2.6) ;
+        opacity: 0.3;
+    }
+}
+@keyframes da1tal1 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-160%,-100%) scale(2.6) ;
+        opacity: 1;
+    }
+}
+@keyframes da1tal2 {
+    0%{
+        transform: translate(-160%,-100%) scale(2.6) ;
+        opacity: 0.3;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+@keyframes da1tal3 {
+    0%{
+        transform: translate(-160%,-100%) scale(2.6) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+/* 表格2 */
+@keyframes da2tar0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(320%,-108%) scale(2.6);
+        opacity: 0.3;
+    }
+}
+
+@keyframes da2tar1 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(320%,-108%) scale(2.6) ;
+        opacity: 1;
+    }
+}
+@keyframes da2tar2 {
+    0%{
+        transform: translate(320%,-108%) scale(2.6);
+        opacity: 0.3;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+@keyframes da2tar3 {
+    0%{
+        transform: translate(320%,-108%) scale(2.6) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+
+@keyframes da2tal0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-400%,-108%) scale(2.6) ;
+        opacity: 0.3;
+    }
+}
+@keyframes da2tal1 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-400%,-108%) scale(2.6) ;
+        opacity: 1;
+    }
+}
+@keyframes da2tal2 {
+    0%{
+        transform:  translate(-400%,-108%) scale(2.6) ;
+        opacity: 0.3;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+@keyframes da2tal3 {
+    0%{
+        transform:  translate(-400%,-108%) scale(2.6) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+
+/* 销量1 */
+@keyframes sale1r0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(60%,260%) scale(2);
+        opacity: 1;
+    }
+}
+
+@keyframes sale1r1 {
+    0%{
+        transform: translate(60%,260%) scale(2);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-50%,-50%) scale(0.3) ;
+        opacity: 0;
+    }
+}
+@keyframes sale1l0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-150%,260%) scale(2) ;
+        opacity: 1;
+    }
+}
+@keyframes sale1l1 {
+    0%{
+        transform:  translate(-150%,260%) scale(2); /* 居中对齐 */
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-50%,-50%) scale(0.3) ;
+        opacity: 0;
+    }
+}
+/* 销量2 */
+@keyframes sale2r0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(312%,400%) scale(2.5) ;
+        opacity: 1;
+    }
+}
+
+@keyframes sale2r1 {
+    0%{
+        transform: translate(312%,400%) scale(2.5) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-50%,-50%) scale(0.3) ;
+        opacity: 0;
+    }
+}
+@keyframes sale2l0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-415%,400%) scale(2.5) ;
+        opacity: 1;
+    }
+}
+@keyframes sale2l1 {
+    0%{
+        transform: translate(-415%,400%) scale(2.5) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translate(-50%,-50%) scale(0.3) ;
+        opacity: 0;
+    }
+}
+/* 颜色 */
+@keyframes colorl0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(-260%,600%) scale(5.5) ;
+        opacity: 1;
+    }
+}
+@keyframes colorl1 {
+    0%{
+        transform: translate(-260%,600%) scale(5.5) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+@keyframes colorr0 {
+    0%{
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(170%,600%) scale(5.5) ;
+        opacity: 1;
+    }
+}
+@keyframes colorr1 {
+    0%{
+        transform: translate(170%,600%) scale(5.5) ;
+        opacity: 1;
+    }
+    
+    100% {
+        transform:  translate(-50%, -50%) scale(0.3); /* 居中对齐 */
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* 应援棒 */
+
+.lightbulb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 垂直排列内容 */
+    overflow: hidden; /* 防止溢出 */
+    position: relative; /* 设置相对定位 */
+    width: 100vw; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+}
+
+.lightbulb {
+    max-width: 30%;
+    height: auto;
+    cursor: pointer; /* 鼠标悬停时显示手型图标 */
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    z-index: 8;
+    animation-fill-mode: forwards;
+}
+
+.lightbulb:hover {
+    transform: scale(1.1); /* 放大、旋转、移动  rotate(10deg)*/
+    opacity: 0.8; /* 降低透明度 */
+}
+/* 年份 */
+.date-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 55%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: date0 1s 1;
+    animation-fill-mode: forwards;
+    
+} 
+.date {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    z-index: 5;
+    cursor: pointer;
+}
+/* 灯光 */
+.light-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 150%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+     animation: light0 1s 1; 
+     z-index: 9;
+    animation-fill-mode: forwards;
+    
+} 
+.light {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    z-index: 1;
+    cursor: pointer;
+}
+#light1-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+
+    cursor: pointer;
+}
+#light2-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+
+    cursor: pointer;
+}
+#light3-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+
+    cursor: pointer;
+}
+/* logo */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 垂直排列内容 */
+    overflow: hidden; /* 防止溢出 */
+}
+.logo {
+    width: 30%; /* 根据实际图片大小调整 */
+    height: auto;
+    z-index: 15;
+}
+
+
+/* 专辑 */
+
+
+
+.album-container {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.album-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 10%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: animation0 1s 1;
+    z-index: 10;
+    animation-fill-mode: forwards;
+    
+} 
+
+.album {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+    /* animation: animation0 4s infinite; */
+}
+.name {
+
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+    /* animation: animation0 4s infinite; */
+}
+
+
+#album1-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+
+#album2-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+
+#album3-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+
+#album4-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+#album5-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+#album6-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+
+#album7-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+
+#album8-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+
+#album9-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+#album10-wrapper {
+
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    /* animation: animation1 4s infinite; */
+}
+
+
+.da1ta-container {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.da1ta-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 10%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: animation0 1s 1;
+    z-index: 7;
+    animation-fill-mode: forwards;
+    
+} 
+.da1ta {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+}
+
+#da1ta1-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta2-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta3-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta4-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta5-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta6-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta7-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta8-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta9-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da1ta10-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+.sale1-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 10%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: animation0 1s 1;
+    z-index: 7;
+    animation-fill-mode: forwards;
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    
+} 
+.sale1{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+}
+
+
+.da2ta-container {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.da2ta-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 10%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: animation0 1s 1;
+    z-index: 7;
+    animation-fill-mode: forwards;
+    
+} 
+.da2ta {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+}
+.sale2-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 10%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: animation0 1s 1;
+    z-index: 7;
+    animation-fill-mode: forwards;
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+    
+} 
+.sale2{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+}
+#da2ta1-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta2-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta3-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta4-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta5-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta6-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta7-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta8-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta9-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#da2ta10-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+.color-container {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.color-wrapper {
+    position: absolute;
+    top: 50%; /* 根据需要调整 */
+    left: 50%; /* 根据需要调整 */
+   
+    width: 10%; /* 根据需要调整 */
+    height: auto; /* 根据需要调整 */
+    transition: transform 0.3s ease;
+    animation: animation0 1s 1;
+    z-index: 7;
+    animation-fill-mode: forwards;
+    
+} 
+.color {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* 平滑过渡效果 */
+    object-fit: contain; 
+}
+#color1-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color2-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color3-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color4-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color5-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color6-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color7-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color8-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color9-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
+#color10-wrapper {
+    
+    overflow: hidden; /* 防止溢出 */
+    flex-grow: 1; /* 允许容器根据内容增长 */
+    cursor: pointer;
+}
